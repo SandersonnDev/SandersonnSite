@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Développeur Web Freelance</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="bar">
+      <div class="logo"><a href="#">MonLogo</a></div>
+      <nav>
+        <ul>
+          <li><a href="#offres">Offres</a></li>
+          <li><a href="#partenaires">Partenaires</a></li>
+          <li><a href="#avis">Avis</a></li>
+          <li><a href="#" class="open-contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= HERO FULL ================= -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Développeur Web Freelance</h1>
+      <p>Création de sites modernes et performants adaptés à vos besoins.</p>
+      <a href="#contact" class="cta">Demander un devis</a>
+    </div>
+  </section>
+
+  <!-- ================= OFFRES ================= -->
+  <section class="offre animate-on-scroll from-left" id="offres">
+    <h2>Mes Offres</h2>
+    <div class="cards animate-on-scroll from-right">
+      <article>
+        <h3>Site Particulier</h3>
+        <p>Un site simple et élégant.</p>
+        <button class="btn-details" data-target="modal-particulier">Voir détails</button>
+      </article>
+      <article>
+        <h3>Site Association</h3>
+        <p>Un site clair et moderne.</p>
+        <button class="btn-details" data-target="modal-asso">Voir détails</button>
+      </article>
+      <article>
+        <h3>Site Professionnel</h3>
+        <p>Une vitrine optimisée pour votre activité.</p>
+        <button class="btn-details" data-target="modal-pro">Voir détails</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- MODALS OFFRES -->
+  <div class="modal" id="modal-particulier">
+    <div class="modal-content"><span class="close">&times;</span><h3>Site Particulier</h3><p>Site vitrine jusqu'à 3 pages (Accueil, À propos, Contact), responsive et rapide.</p></div>
+  </div>
+  <div class="modal" id="modal-asso">
+    <div class="modal-content"><span class="close">&times;</span><h3>Site Association</h3><p>Mettre en avant vos actions, gérer actualités et événements. Accessible et mobile-friendly.</p></div>
+  </div>
+  <div class="modal" id="modal-pro">
+    <div class="modal-content"><span class="close">&times;</span><h3>Site Professionnel</h3><p>Design premium, pages produits/services, blog inclus, SEO optimisé.</p></div>
+  </div>
+
+  <!-- ================= PARTENAIRES ================= -->
+
+  <section class="partenaires animate-on-scroll from-right" id="partenaires">
+    <h2>Partenaires & Clients</h2>
+    <div class="logos">
+      <img src="partner1.png" alt="Partenaire 1" />
+      <img src="partner2.png" alt="Partenaire 2" />
+      <img src="partner3.png" alt="Partenaire 3" />
+    </div>
+  </section>
+
+  <!-- ================= PORTFOLIO ================= -->
+
+  <section class="portfolio animate-on-scroll from-left" id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <article class="portfolio-item" data-modal="modal-project1">
+        <img src="project1-thumb.jpg" alt="Projet Client 1" />
+        <h3>Site Client 1</h3>
+        <p>Site vitrine responsive réalisé avec HTML, CSS et JavaScript.</p>
+        <button class="btn open-modal" data-modal="modal-project1">Voir le projet</button>
+      </article>
+      <article class="portfolio-item" data-modal="modal-project1">
+        <img src="project1-thumb.jpg" alt="Projet Client 1" />
+        <h3>Site Client 1</h3>
+        <p>Site vitrine responsive réalisé avec HTML, CSS et JavaScript.</p>
+        <button class="btn open-modal" data-modal="modal-project1">Voir le projet</button>
+      </article>
+      <article class="portfolio-item" data-modal="modal-project1">
+        <img src="project1-thumb.jpg" alt="Projet Client 1" />
+        <h3>Site Client 1</h3>
+        <p>Site vitrine responsive réalisé avec HTML, CSS et JavaScript.</p>
+        <button class="btn open-modal" data-modal="modal-project1">Voir le projet</button>
+      </article>
+      <!-- Autres projets... -->
+    </div>
+  </section>
+  
+  <!-- Modal projet 1 avec galerie -->
+  <div id="modal-project1" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Site Client 1</h3>
+      <div class="gallery-modal">
+        <img src="project1-1.jpg" alt="Image 1" class="gallery-image active" />
+        <img src="project1-2.jpg" alt="Image 2" class="gallery-image" />
+        <img src="project1-3.jpg" alt="Image 3" class="gallery-image" />
+        <img src="project1-4.jpg" alt="Image 4" class="gallery-image" />
+        <img src="project1-5.jpg" alt="Image 5" class="gallery-image" />
+        <!-- Ajoute jusqu'à 6 images -->
+      </div>
+      <div class="gallery-controls">
+        <button class="prev-btn">&#10094;</button>
+        <button class="next-btn">&#10095;</button>
+      </div>
+      <p>Description détaillée du projet avec ses fonctionnalités et technologies.</p>
+    </div>
+  </div>
+  <div id="modal-project2" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Site Client 1</h3>
+      <div class="gallery-modal">
+        <img src="project1-1.jpg" alt="Image 1" class="gallery-image active" />
+        <img src="project1-2.jpg" alt="Image 2" class="gallery-image" />
+        <img src="project1-3.jpg" alt="Image 3" class="gallery-image" />
+        <img src="project1-4.jpg" alt="Image 4" class="gallery-image" />
+        <img src="project1-5.jpg" alt="Image 5" class="gallery-image" />
+        <!-- Ajoute jusqu'à 6 images -->
+      </div>
+      <div class="gallery-controls">
+        <button class="prev-btn">&#10094;</button>
+        <button class="next-btn">&#10095;</button>
+      </div>
+      <p>Description détaillée du projet avec ses fonctionnalités et technologies.</p>
+    </div>
+  </div>
+  <div id="modal-project3" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Site Client 1</h3>
+      <div class="gallery-modal">
+        <img src="project1-1.jpg" alt="Image 1" class="gallery-image active" />
+        <img src="project1-2.jpg" alt="Image 2" class="gallery-image" />
+        <img src="project1-3.jpg" alt="Image 3" class="gallery-image" />
+        <img src="project1-4.jpg" alt="Image 4" class="gallery-image" />
+        <img src="project1-5.jpg" alt="Image 5" class="gallery-image" />
+        <!-- Ajoute jusqu'à 6 images -->
+      </div>
+      <div class="gallery-controls">
+        <button class="prev-btn">&#10094;</button>
+        <button class="next-btn">&#10095;</button>
+      </div>
+      <p>Description détaillée du projet avec ses fonctionnalités et technologies.</p>
+    </div>
+  </div>
+  
+
+  <!-- ================= AVIS MULTI-CARDS ================= -->
+  <section class="avis animate-on-scroll" id="avis">
+    <h2>Témoignages</h2>
+    <div class="cards">
+      <article>
+        <p>“Super pro, site rapide et design efficace.”</p>
+        <span>— Julie, artisan</span>
+      </article>
+      <article>
+        <p>“Excellente communication et site moderne.”</p>
+        <span>— Marc, association</span>
+      </article>
+      <article>
+        <p>“Un vrai plus pour mon activité, merci !”</p>
+        <span>— Sarah, entrepreneur</span>
+      </article>
+    </div>
+    <div class="avis-pastilles">
+      <button data-index="0" class="active"></button>
+      <button data-index="1"></button>
+      <button data-index="2"></button>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section class="contact animate-on-scroll" id="contact">
+    <h2>Me Contacter</h2>
+    <form>
+      <label for="name">Nom</label>
+      <input type="text" id="name" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- ================= MODAL CONTACT ================= -->
+  <div class="modal" id="modal-contact">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Me Contacter</h3>
+      <form>
+        <label for="name2">Nom</label>
+        <input type="text" id="name2" required />
+        <label for="email2">Email</label>
+        <input type="email" id="email2" required />
+        <label for="message2">Message</label>
+        <textarea id="message2" rows="5" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
