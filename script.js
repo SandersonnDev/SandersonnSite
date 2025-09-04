@@ -88,3 +88,22 @@ window.addEventListener('click', e => {
     if (e.target === modal) modal.style.display = 'none';
   });
 });
+
+const burgerBtn = document.getElementById('burger-btn');
+const sidebarRight = document.getElementById('sidebar-menu-right');
+
+burgerBtn.addEventListener('click', () => {
+  const expanded = burgerBtn.getAttribute('aria-expanded') === 'true' || false;
+  burgerBtn.setAttribute('aria-expanded', !expanded);
+  sidebarRight.classList.toggle('active');
+  sidebarRight.setAttribute('aria-hidden', expanded);
+});
+
+// Fermer le menu au clic sur un lien (optionnel)
+sidebarRight.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    burgerBtn.setAttribute('aria-expanded', false);
+    sidebarRight.classList.remove('active');
+    sidebarRight.setAttribute('aria-hidden', true);
+  });
+});
